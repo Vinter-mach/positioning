@@ -116,7 +116,6 @@
 .fullProgress {
     position: absolute;
     background: red;
-    width: 50%;
     height: 100%;
     overflow: hidden;
     border-radius: 20px;
