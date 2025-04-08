@@ -91,3 +91,44 @@
     right: 10px;
     cursor: pointer;
 }
+
+
+.progressBar {
+    background: #a5a4a4;
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    height: 30px;
+    border-radius: 20px;
+
+}
+
+.progressBar::before {
+    content: 'Loading...';
+    position: absolute;
+    left: 320px;
+    top: 15px;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+
+.fullProgress {
+    position: absolute;
+    background: red;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+
+}
+
+.fullProgress::before {
+    color: white;
+    content: 'Loading...';
+    position: absolute;
+    left: 320px;
+    top: 15px;
+    transform: translate(-50%, -50%);
+}
+
