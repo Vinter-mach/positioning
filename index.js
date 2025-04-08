@@ -1,7 +1,8 @@
-/*
-    Изменить элементу цвет и ширину можно вот так:
+const modal = document.querySelector('.modal');
+const overlay = document.querySelector('.overlay');
+const closeButton = document.querySelector('.close');
 
-    const element = document.querySelector('.myElement');
-    element.style.color = 'red';
-    element.style.width = '300px';
-*/
+closeButton.addEventListener('click', () => {
+    modal.style.display = 'none';
+    overlay.style.display = 'none';
+});
